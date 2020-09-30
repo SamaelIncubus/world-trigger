@@ -32,7 +32,7 @@ body{
   padding: 10px;
 }
 .img-fluid{
-  width:100%;
+  width: 100%;
 }
 .title{
   margin:10px 10px 10px 10px;
@@ -70,7 +70,26 @@ body{
   color: black;
 }
 #voidName, #voidFirstSurname, #voidSecondSurname, #voidGender, #voidRol, #voidMain, #voidNote, 
-#invalidateNote, #voidAnime, #invalidateAnime{
+#invalidateNote, #voidAnime, #invalidateAnime, #voidEmail, #voidPassword, #PasswordUnConfirm,
+#voidEmail, #voidPassword, #voidPasswordConfirm, #voidNameS, #voidTextoS, #voidImagenS, 
+#voidNameC, #voidTextoC, #voidImagenC, #voidNameM, #voidTextoM, #voidImagenM, #voidNameL,
+#voidTextoL, #voidImagenL{
   color: red;
   display: none;
+}
+.card{
+  color: black;
+}
+.card-header{
+  color: white;
+  background-color: #383c44;
+}
+#signUp, #back{
+  margin-left: 10px;
+}
+#formS, #formC, #formM, #formL, #formID{
+  display: none;
+}
+#rss{
+  width: 6%;
 }

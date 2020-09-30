@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Border</title>
+    <link rel="icon" href="appearance/photo/icon/border.png">
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -19,7 +20,19 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
+    <!-- Icons -->
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    <!-- Firebase App is always required and must be first -->
+    <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase-app.js"></script>
+
+    <!-- Add additional services that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase-database.js"></script>
+
+
     <link rel="stylesheet" href="appearance/styles.css">
+    <script src="structure/border.js"></script>
 </head>
 
 <body>
@@ -49,19 +62,29 @@
                     </div>
                 </li>
                 <li class="nav-item"> <a class="nav-link" href="gallery.html">Galería</a> </li>
-                <li class="nav-item"> <a class="nav-link" href=" form.html">Formulario</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="login.html">Iniciar Sección</a> </li>
+                <li class="nav-item">
+                    <a type="application/rss+xml" href="news.xml">
+                        <img alt="image" src="appearance/photo/icon/rss.png" id="rss" class="img-fluid">
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
 
     <div id="bDemo" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active"> <img src="appearance/photo/border/carousel/operador.jpg" alt="Error 404: Image Not Found" class="img-fluid"> </div>
-            <div class="carousel-item">        <img src="appearance/photo/border/carousel/rangoA2.jpg"  alt="Error 404: Image Not Found" class="img-fluid"> </div>
-            <div class="carousel-item">        <img src="appearance/photo/border/carousel/rangoA3.jpg"  alt="Error 404: Image Not Found" class="img-fluid"> </div>
+            <div class="carousel-item active"> <img src="appearance/photo/border/carousel/operador.jpg"
+                    alt="Error 404: Image Not Found" class="img-fluid"> </div>
+            <div class="carousel-item"> <img src="appearance/photo/border/carousel/rangoA2.jpg"
+                    alt="Error 404: Image Not Found" class="img-fluid"> </div>
+            <div class="carousel-item"> <img src="appearance/photo/border/carousel/rangoA3.jpg"
+                    alt="Error 404: Image Not Found" class="img-fluid"> </div>
         </div>
-        <a class="carousel-control-prev" href="#bDemo" data-slide="prev"> <span class="carousel-control-prev-icon"> </span> </a>
-        <a class="carousel-control-next" href="#bDemo" data-slide="next"> <span class="carousel-control-next-icon"> </span> </a>
+        <a class="carousel-control-prev" href="#bDemo" data-slide="prev"> <span class="carousel-control-prev-icon">
+            </span> </a>
+        <a class="carousel-control-next" href="#bDemo" data-slide="next"> <span class="carousel-control-next-icon">
+            </span> </a>
     </div>
     <br />
 
@@ -72,31 +95,39 @@
         <table class="table-black table-responsive">
             <tbody>
                 <tr>
-                    <th> <img src="appearance/photo/border/table/arrowLeft.jpg" alt="Error 404: Image Not Found" class="bTable"> </th>
-                    <th> <img src="appearance/photo/border/table/arrowLeft.jpg" alt="Error 404: Image Not Found" class="bTable"> </th>
+                    <th> <img src="appearance/photo/border/table/arrowLeft.jpg" alt="Error 404: Image Not Found"
+                            class="bTable"> </th>
+                    <th> <img src="appearance/photo/border/table/arrowLeft.jpg" alt="Error 404: Image Not Found"
+                            class="bTable"> </th>
                     <th>
                         Comandante Director General
                         <br />
-                        <img src="appearance/photo/border/table/arrow.jpg" alt="Error 404: Image Not Found" class="bTable">
+                        <img src="appearance/photo/border/table/arrow.jpg" alt="Error 404: Image Not Found"
+                            class="bTable">
                     </th>
-                    <th> <img src="appearance/photo/border/table/arrowRight.jpg" alt="Error 404: Image Not Found" class="bTable"> </th>
+                    <th> <img src="appearance/photo/border/table/arrowRight.jpg" alt="Error 404: Image Not Found"
+                            class="bTable"> </th>
                 </tr>
                 <tr>
-                    <th> <img src="appearance/photo/border/table/arrow.jpg"      alt="Error 404: Image Not Found" class="bTable"> </th>
+                    <th> <img src="appearance/photo/border/table/arrow.jpg" alt="Error 404: Image Not Found"
+                            class="bTable"> </th>
                     <th>
                         Directores de División
                         <br />
-                        <img src="appearance/photo/border/table/arrow.jpg" alt="Error 404: Image Not Found" class="bTable">       
+                        <img src="appearance/photo/border/table/arrow.jpg" alt="Error 404: Image Not Found"
+                            class="bTable">
                     </th>
                     <th>
                         Directores de Cuartel
                         <br />
-                        <img src="appearance/photo/border/table/arrow.jpg" alt="Error 404: Image Not Found" class="bTable">        
+                        <img src="appearance/photo/border/table/arrow.jpg" alt="Error 404: Image Not Found"
+                            class="bTable">
                     </th>
                     <th>
                         Directores de Departamento
                         <br />
-                        <img src="appearance/photo/border/table/arrow.jpg" alt="Error 404: Image Not Found" class="bTable">
+                        <img src="appearance/photo/border/table/arrow.jpg" alt="Error 404: Image Not Found"
+                            class="bTable">
                     </th>
                 </tr>
                 <tr>
@@ -116,21 +147,29 @@
         <br>
         <div class="d-none d-md-block">
             <ul class="nav nav-tabs">
-                <li class="nav-item"> <a class="nav-link active bg-dark" data-toggle="tab" href="#home"> <b class="click">Atacante</b> </a> </li>
-                <li class="nav-item"> <a class="nav-link        bg-dark" data-toggle="tab" href="#menu1"> <b class="click">Artillero</b> </a> </li>
-                <li class="nav-item"> <a class="nav-link        bg-dark" data-toggle="tab" href="#menu2"> <b class="click">Francotirador</b> </a> </li>
-                <li class="nav-item"> <a class="nav-link        bg-dark" data-toggle="tab" href="#menu3"> <b class="click">Operador</b> </a> </li>
-                <li class="nav-item"> <a class="nav-link        bg-dark" data-toggle="tab" href="#menu4"> <b class="click">Ingeniero</b> </a> </li>
+                <li class="nav-item"> <a class="nav-link active bg-dark" data-toggle="tab" href="#home"> <b
+                            class="click">Atacante</b> </a> </li>
+                <li class="nav-item"> <a class="nav-link        bg-dark" data-toggle="tab" href="#menu1"> <b
+                            class="click">Artillero</b> </a> </li>
+                <li class="nav-item"> <a class="nav-link        bg-dark" data-toggle="tab" href="#menu2"> <b
+                            class="click">Francotirador</b> </a> </li>
+                <li class="nav-item"> <a class="nav-link        bg-dark" data-toggle="tab" href="#menu3"> <b
+                            class="click">Operador</b> </a> </li>
+                <li class="nav-item"> <a class="nav-link        bg-dark" data-toggle="tab" href="#menu4"> <b
+                            class="click">Ingeniero</b> </a> </li>
             </ul>
         </div>
         <div class="d-md-none">
             <ul class="nav nav-tabs">
-                <li class="nav-item"> <a class="nav-link active bg-dark" data-toggle="tab" href="#home"> <b class="click">Atacante</b> </a> </li>
-                <li class="nav-item"><a class="nav-link bg-dark" data-toggle="tab" href="#menu1"> <b class="click">Artillero</b> </a> </li>
+                <li class="nav-item"> <a class="nav-link active bg-dark" data-toggle="tab" href="#home"> <b
+                            class="click">Atacante</b> </a> </li>
+                <li class="nav-item"><a class="nav-link bg-dark" data-toggle="tab" href="#menu1"> <b
+                            class="click">Artillero</b> </a> </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle bg-dark" id="mobile" data-toggle="dropdown" href="#"><b></b></a>
                     <div class="dropdown-menu" id="mas">
-                        <a class="nav-link bg-dark" data-toggle="tab" href="#menu2"> <b class="click">Francotirador</b> </a>
+                        <a class="nav-link bg-dark" data-toggle="tab" href="#menu2"> <b class="click">Francotirador</b>
+                        </a>
                         <a class="nav-link bg-dark" data-toggle="tab" href="#menu3"> <b class="click">Operador</b> </a>
                         <a class="nav-link bg-dark" data-toggle="tab" href="#menu4"> <b class="click">Ingeniero</b> </a>
                     </div>
@@ -140,25 +179,29 @@
         <div class="tab-content">
             <div id="home" class="container tab-pane active">
                 <br>
-                <p class="justify"><b>Son agentes que se especializan el armas cuerpo a cuerpo. Como katanas, escudos, espadas,...</b> </p>
+                <p class="justify"><b>Son agentes que se especializan el armas cuerpo a cuerpo. Como katanas, escudos,
+                        espadas,...</b> </p>
             </div>
             <div id="menu1" class="container tab-pane fade">
                 <br>
-                <p class="justify"><b>Son agentes que se especializan el armas media distancia. Como sub-fusiles, escopetas,...</b> </p>
+                <p class="justify"><b>Son agentes que se especializan el armas media distancia. Como sub-fusiles,
+                        escopetas,...</b> </p>
             </div>
             <div id="menu2" class="container tab-pane fade">
                 <br>
-                <p class="justify"><b>Son agentes que se especializan el armas media distancia. Como francotiradores.</b> </p>
+                <p class="justify"><b>Son agentes que se especializan el armas media distancia. Como
+                        francotiradores.</b> </p>
             </div>
             <div id="menu3" class="container tab-pane fade">
                 <br>
-                <p class="justify"><b>Son agentes en cargados del manejo de la información en el campo de batalla. Como obtener planos
-                     de edificios , dar información de enemigos,...</b> 
+                <p class="justify"><b>Son agentes en cargados del manejo de la información en el campo de batalla. Como
+                        obtener planos de edificios , dar información de enemigos,...</b>
                 </p>
             </div>
             <div id="menu4" class="container tab-pane fade">
                 <br>
-                <p class="justify"><b>Son agentes en cargados de el mantenimiento de la base como el desarrollo de tecnología..</b> </p>
+                <p class="justify"><b>Son agentes en cargados de el mantenimiento de la base como el desarrollo de
+                        tecnología..</b> </p>
             </div>
         </div>
     </div>
@@ -167,146 +210,241 @@
 
     <h2 class="center" id="bTecn"><strong>Tecnología</strong></h2>
     <br />
+    <!-- Equipo -->
     <div class="container">
-        <table class="table-dark table-responsive table-bordered">
-            <thead>
-                <tr>
-                    <th> <strong class="title">Nombre      </strong> </th>
-                    <th> <strong class="title">Aspecto     </strong> </th>
-                    <th> <strong class="title">Descripción </strong> </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th colspan="2"> <strong class="title">Categoría:      </strong> </th>
-                    <th>             <strong class="title">Equipo Estándar </strong> </th>
-                </tr>
-                <tr>
-                    <th> <strong>Bail Out</strong> </th>
-                    <th> <img src="appearance/photo/border/technology/bailOut.gif"   alt="Error 404: Image Not Found" class="img-fluid"> </th>
-                    <th class="left">Trigger obligatorio para los agentes de rango C o superior; este seencarga de teletransportar al usuario
-                        a la base cuando este queda fuera de combate
-                    </th>
-                </tr>
-                <tr>
-                    <th> <strong>Radar</strong> </th>
-                    <th> <img src="appearance/photo/border/technology/radar.jpg"     alt="Error 404: Image Not Found" class="img-fluid"> </th>
-                    <th class="left">Trigger detecta la posición de los enemigos dentro de un área</th>
-                </tr>
-                <tr>
-                    <th> <strong>Trion Body</strong> </th>
-                    <th> <img src="appearance/photo/border/technology/bodyTrion.gif" alt="Error 404: Image Not Found" class="img-fluid"> </th>
-                    <th class="left">Los cuerpos de Trion son el implemento más básico otorgado por
-                        Triggers. Son virtualmente invulnerables a daños que no son causados ​​por Trion (y por lo
-                        tanto por Triggers) también le otorgan al usuario varias mejoras físicas, así como un sistema
-                        de comunicación interno
-                    </th>
-                </tr>
-                <tr>
-                    <th colspan="2"> <strong class="title">Categoría:     </strong> </th>
-                    <th>             <strong class="title">Armas Atacante </strong> </th>
-                </tr>
-                <tr>
-                    <th> <strong>Kogetsu</strong> </th>
-                    <th> <img src="appearance/photo/border/technology/kogetsu.jpg"  alt="Error 404: Image Not Found" class="img-fluid"> </th>
-                    <th class="left">El primer Trigger de Ataques que se creó y el más popular. Es un arma
-                        moderadamente pesada con un poder de ataque y durabilidad muy altos. Se considera el más
-                        equilibrado
-                    </th>
-                </tr>
-                <tr>
-                    <th> <strong>Raygust</strong> </th>
-                    <th> <img src="appearance/photo/border/technology/raygust.jpg"  alt="Error 404: Image Not Found" class="img-fluid"> </th>
-                    <th class="left">Un Trigger de ataque orientado a la defensa pues puede transformarse
-                        en un escudo, fue el último de los tres principales que se inventaron. Tiene un bajo poder
-                        ofensivo y es muy pesado; lo hacen impopular entre los atacantes. No obstante, es muy
-                        resistente y su durabilidad aumenta aún más en el modo de escudo
-                    </th>
-                </tr>
-                <tr>
-                    <th> <strong>Scorpion</strong> </th>
-                    <th> <img src="appearance/photo/border/technology/scorpion.jpg" alt="Error 404: Image Not Found" class="img-fluid"> </th>
-                    <th class="left">Un Trigger que es hoja que se puede extraer de cualquier parte del
-                        cuerpo y cuya forma se puede modificar libremente; Al ajustar el Trion. Fue el segundo que se
-                        creó. Es poderoso en ataque y casi sin peso, pero su durabilidad es baja
-                    </th>
-                </tr>
-                <tr>
-                    <th colspan="2"> <strong class="title">Categoría:      </strong> </th>
-                    <th>             <strong class="title">Armas Tiradores </strong> </th>
-                </tr>
-                <tr>
-                    <th> <strong>Asteroid</strong> </th>
-                    <th> <img src="appearance/photo/border/technology/asteroid.gif" alt="Error 404: Image Not Found" class="img-fluid"> </th>
-                    <th class="left">Un Trigger que son balas que no tienen propiedades especiales. Es
-                        particularmente efectivo
-                        para fuego concentrado.
-                    </th>
-                </tr>
-                <tr>
-                    <th> <strong>Hound</strong> </th>
-                    <th> <img src="appearance/photo/border/technology/hound.gif"    alt="Error 404: Image Not Found" class="img-fluid"> </th>
-                    <th class="left">Un Trigger que son balas que persiguen al objetivo automáticamente,
-                        incluso si son invisibles. Es posible seleccionar entre un modo de buscador de Trions, que hace
-                        que las balas se acerquen a los enemigos, y un modo de orientación guiada, que está dirigido
-                        por la vista y más preciso.
-                    </th>
-                </tr>
-                <tr>
-                    <th> <strong>Meteora</strong> </th>
-                    <th> <img src="appearance/photo/border/technology/meteora.gif" alt="Error 404: Image Not Found" class="img-fluid"> </th>
-                    <th class="left">Un Trigger que son balas que explotan al impactar, se usa para causar
-                        un daño generalizado. Los tiradores pueden establecer su velocidad a cero para emplearla en
-                        trampas. El tamaño de las explosiones aumenta con la cantidad de trion gastado.
-                    </th>
-                </tr>
-                <tr>
-                    <th> <strong>Viper</strong> </th>
-                    <th> <img src="appearance/photo/border/technology/viper.gif"  alt="Error 404: Image Not Found" class="img-fluid"> </th>
-                    <th class="left">Un Trigger que son balas cuya trayectoria se puede establecer antes de
-                        disparar. Aunque la mayoría de los agentes se adhieren a una pequeña cantidad de patrones con
-                        los que han practicado, los usuarios especialmente experimentados pueden crear nuevas
-                        trayectorias antes de cada disparo, lo que mejora considerablemente la eficacia de este
-                        Trigger.
-                    </th>
-                </tr>
-                <tr>
-                    <th colspan="2"> <strong class="title">Categoría:            </strong> </th>
-                    <th>             <strong class="title">Armas Francotiradores </strong> </th>
-                </tr>
-                <tr>
-                    <th> <strong>Eaglet</strong> </th>
-                    <th> <img src="appearance/photo/border/technology/eaglet.jpg" alt="Error 404: Image Not Found" class="img-fluid"> </th>
-                    <th class="left">Un Trigger que es un rifle centrado en el alcance. Cuanto más alto sea
-                        el Trión del usuario, más se extiende el rango. Aparte del alcance, este Trigger es notable por
-                        su alta velocidad de balas y su potencia de fuego. Ya que no tiene defectos y es el más
-                        equilibrado, Eaglet es el más popular de los francotiradores.
-                    </th>
-                </tr>
-                <tr>
-                    <th> <strong>Ibis</strong> </th>
-                    <th> <img src="appearance/photo/border/technology/ibis.jpg"   alt="Error 404: Image Not Found" class="img-fluid"> </th>
-                    <th class="left">Un Trigger que es un rifle con la mayor potencia de fuego, pero con
-                        baja velocidad de balas. Esto hace que sea difícil golpear. Siendo el más pesado y el más
-                        voluminoso de los tres, siendo difícil apuntar; por tanto los usuarios lo apoyan en un trípode.
-                        Por todas estas razones, rara vez se emplea en batallas. Cuanto más alto sea el Trion del
-                        usuario, más potente será la bala.
-                    </th>
-                </tr>
-                <tr>
-                    <th> <strong>Lightning</strong> </th>
-                    <th><img src="appearance/photo/border/technology/lightning.jpg" alt="Error 404: Image Not Found" class="img-fluid"> </th>
-                    <th class="left">Un Trigger que es un rifle con baja potencia, pero tiene la mayor
-                        velocidad de balas de los tres. Tiene un alto grado de precisión, además es bastante ligero lo
-                        que lo hace muy fácil de manejar; de hecho se puede disparar mientras se está en movimiento.
-                        También es capaz de disparar rápidamente; cuanto mayor sea el Trion del usuario, mayor será la
-                        velocidad de la bala.
-                    </th>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-responsive">
+            <table class="table table-dark table-bordered ">
+                <thead>
+                    <tr>
+                        <th> <strong class="title">Nombre </strong> </th>
+                        <th> <strong class="title">Aspecto </strong> </th>
+                        <th> <strong class="title">Descripción </strong> </th>
+                        <th class="crud" colspan="2"> <strong class="title">CRUD </strong></th>
+                    </tr>
+                    <tr>
+                        <th colspan="2"><strong class="title">Categoría:</strong></th>
+                        <th><strong class="title">Equipo Estándar </strong></th>
+                        <th class="crud" colspan="2">
+                            <button class="btn btn-success" id="showS">
+                                <span class="fa fa-plus"></span>
+                            </button>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-support">
+                    <tr hidden>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
+    <!-- Equipo Form-->
+    <div class="container">
+        <form id="formS">
+            <div class="form-group">
+                <label for="nameS">Nombre</label>
+                <input type="text" class="form-control" name="name" value="" id="nameS">
+                <span id="voidNameS"><b>*Campo requerido</b></span>
+            </div>
 
+            <div class="form-group">
+                <label for="imagenS">Imagen</label>
+                <input type="text" class="form-control" name="imagen" value="" id="imagenS">
+                <span id="voidImagenS"><b>*Campo requerido</b></span>
+            </div>
+
+            <div class="form-group">
+                <label for="textoS">Descripción</label>
+                <input type="text" class="form-control" name="texto" value="" id="textoS">
+                <span id="voidTextoS"><b>*Campo requerido</b></span>
+            </div>
+
+            <input type="submit" name="CrearTechnology" value="Crear Tecnología" id="boton_enviarS">
+        </form>
+    </div>
+    <br />
+    <!-- Corta -->
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table table-dark table-bordered ">
+                <thead>
+                    <tr>
+                        <th> <strong class="title">Nombre </strong> </th>
+                        <th> <strong class="title">Aspecto </strong> </th>
+                        <th> <strong class="title">Descripción </strong> </th>
+                        <th class="crud" colspan="2"> <strong class="title">CRUD </strong></th>
+                    </tr>
+                    <tr>
+                        <th colspan="2"><strong class="title">Categoría:</strong></th>
+                        <th><strong class="title">Armas Atacante </strong></th>
+                        <th class="crud" colspan="2">
+                            <button class="btn btn-success" id="showC">
+                                <span class="fa fa-plus"></span>
+                            </button>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-corta">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br />
+    <!-- Corta Form-->
+    <div class="container">
+        <form id="formC">
+            <div class="form-group">
+                <label for="nameC">Nombre</label>
+                <input type="text" class="form-control" name="name" value="" id="nameC">
+                <span id="voidNameC"><b>*Campo requerido</b></span>
+            </div>
+
+            <div class="form-group">
+                <label for="imagenC">Imagen</label>
+                <input type="text" class="form-control" name="imagen" value="" id="imagenC">
+                <span id="voidImagenC"><b>*Campo requerido</b></span>
+
+            </div>
+
+            <div class="form-group">
+                <label for="textoC">Descripción</label>
+                <input type="text" class="form-control" name="texto" value="" id="textoC">
+                <span id="voidTextoC"><b>*Campo requerido</b></span>
+            </div>
+
+            <input type="submit" name="CrearTechnology" value="Crear Tecnología" id="boton_enviarC">
+        </form>
+    </div>
+    <br />
+    <!-- Media -->
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table table-dark table-bordered ">
+                <thead>
+                    <tr>
+                        <th> <strong class="title">Nombre </strong> </th>
+                        <th> <strong class="title">Aspecto </strong> </th>
+                        <th> <strong class="title">Descripción </strong> </th>
+                        <th class="crud" colspan="2"> <strong class="title">CRUD </strong></th>
+                    </tr>
+                    <tr>
+                        <th colspan="2"><strong class="title">Categoría:</strong></th>
+                        <th><strong class="title">Armas Tiradores </strong></th>
+                        <th class="crud" colspan="2">
+                            <button class="btn btn-success" id="showM">
+                                <span class="fa fa-plus"></span>
+                            </button>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-media">
+                    <tr hidden>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Media Form-->
+    <div class="container">
+        <form id="formM">
+            <div class="form-group">
+                <label for="nameM">Nombre</label>
+                <input type="text" class="form-control" name="name" value="" id="nameM">
+                <span id="voidNameM"><b>*Campo requerido</b></span>
+            </div>
+
+            <div class="form-group">
+                <label for="imagenM">Imagen</label>
+                <input type="text" class="form-control" name="imagen" value="" id="imagenM">
+                <span id="voidImagenM"><b>*Campo requerido</b></span>
+
+            </div>
+
+            <div class="form-group">
+                <label for="textoM">Descripción</label>
+                <input type="text" class="form-control" name="texto" value="" id="textoM">
+                <span id="voidTextoM"><b>*Campo requerido</b></span>
+            </div>
+
+            <input type="submit" name="CrearTechnology" value="Crear Tecnología" id="boton_enviarM">
+        </form>
+    </div>
+    <br />
+    <!-- Larga -->
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table table-dark table-bordered ">
+                <thead>
+                    <tr>
+                        <th> <strong class="title">Nombre </strong> </th>
+                        <th> <strong class="title">Aspecto </strong> </th>
+                        <th> <strong class="title">Descripción </strong> </th>
+                        <th class="crud" colspan="2"> <strong class="title">CRUD </strong></th>
+                    </tr>
+                    <tr>
+                        <th colspan="2"><strong class="title">Categoría:</strong></th>
+                        <th><strong class="title">Armas Francotiradores </strong></th>
+                        <th class="crud" colspan="2">
+                            <button class="btn btn-success" id="showL">
+                                <span class="fa fa-plus"></span>
+                            </button>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-larga">
+                    <tr hidden>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Larga Form-->
+    <div class="container">
+        <form id="formL">
+            <div class="form-group">
+                <label for="nameL">Nombre</label>
+                <input type="text" class="form-control" name="name" value="" id="nameL">
+                <span id="voidNameL"><b>*Campo requerido</b></span>
+            </div>
+
+            <div class="form-group">
+                <label for="imagenL">Imagen</label>
+                <input type="text" class="form-control" name="imagen" value="" id="imagenL">
+                <span id="voidImagenL"><b>*Campo requerido</b></span>
+
+            </div>
+
+            <div class="form-group">
+                <label for="textoL">Descripción</label>
+                <input type="text" class="form-control" name="texto" value="" id="textoL">
+                <span id="voidTextoL"><b>*Campo requerido</b></span>
+            </div>
+
+            <input type="submit" name="CrearTechnology" value="Crear Convalidación" id="boton_enviarL">
+        </form>
+    </div>
     <br />
     <br />
 </body>

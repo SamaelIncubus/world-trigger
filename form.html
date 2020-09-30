@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Formulario</title>
+    <link rel="icon" href="appearance/photo/icon/form.png">
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -19,9 +20,21 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
+    <!-- Firebase App is always required and must be first -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-app.js"></script>
+
+    <!-- Add additional services that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-storage.js"></script>
+
+    <!-- Icons -->
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="appearance/styles.css">
     <script src="structure/form.js"></script>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
         <a class="navbar-brand" href="main.html">World Trigger</a>
@@ -50,14 +63,73 @@
                     </div>
                 </li>
                 <li class="nav-item"> <a class="nav-link" href="gallery.html">Galería</a> </li>
-                <li class="nav-item"> <a class="nav-link" href=" form.html">Formulario</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="login.html">Cerrar Cuenta</a> </li>
+                <li class="nav-item">
+                    <a type="application/rss+xml" href="news.xml">
+                        <img alt="image" src="appearance/photo/icon/rss.png" id="rss" class="img-fluid">
+                    </a>
+                </li>
             </ul>
         </div>
-
     </nav>
     <img src="appearance/photo/title/form.jpg" alt="Error 404: Image Not Found" class="img-fluid">
     <br />
     <div class="container">
+        <div class="table-responsive">
+            <table class="table table-dark table-bordered ">
+                <thead>
+                    <tr>
+                        <th colspan="3"> <strong>Nombre Completo</strong> </th>
+                        <th> <strong>Genero </strong> </th>
+                        <th colspan="4"> <strong>Preguntas</strong> </th>
+                        <th> <strong>Rol</strong></th>
+                        <th> <strong>Main</strong></th>
+                        <th colspan="2"> <strong>Notas</strong></th>
+                        <th> <strong>Imagen</strong></th>
+                        <th colspan="2"> <strong>CRUD</strong></th>
+                    </tr>
+                    <tr>
+                        <th><strong>Nombre</strong></th>
+                        <th><strong>Apellido1</strong></th>
+                        <th><strong>Apellido2</strong></th>
+                        <th></th>
+                        <th><strong>1</strong></th>
+                        <th><strong>2</strong></th>
+                        <th><strong>3</strong></th>
+                        <th><strong>4</strong></th>
+                        <th></th>
+                        <th></th>
+                        <th><strong>Page</strong></th>
+                        <th><strong>Web</strong></th>
+                        <th></th>
+                        <th colspan="2">
+                            <button class="btn btn-success" id="show">
+                                <span class="fa fa-plus"></span>
+                            </button>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="tbody_form">
+                    <tr hidden>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         <div class="unset">
             <form name="myForm" id="formID" class="left" action="main.html" method="post">
                 <div class="form-group">
@@ -65,95 +137,101 @@
                     <input type="text" class="form-control" name="name" value="" id="name">
                     <span id="voidName"><b>*Campo requerido</b></span>
                 </div>
-        
-        
+
+
                 <div class="form-group">
                     <label for="firstSurname"> <b>Primer Apellido: </b> </label>
                     <input type="text" class="form-control" name="firstSurname" value="" id="firstSurname">
                     <span id="voidFirstSurname"><b>*Campo requerido</b></span>
                 </div>
-        
-        
+
+
                 <div class="form-group">
                     <label for="secondSurname"> <b>Segundo Apellido: </b> </label>
                     <input type="text" class="form-control" name="secondSurname" value="" id="secondSurname">
                     <span id="voidSecondSurname"><b>*Campo requerido</b></span>
                 </div>
-        
+
                 <h4><strong>Género</strong></h4>
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" value="man" name="gender">
+                        <input type="radio" class="form-check-input" value="Hombre" name="gender" id="male">
                         <b> Hombre</b>
                     </label>
                 </div>
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" value="woman" name="gender">
+                        <input type="radio" class="form-check-input" value="Mujer" name="gender" id="female">
                         <b> Mujer</b>
                     </label>
                 </div>
                 <span id="voidGender"><b>*Campo requerido</b></span>
+
                 <br />
+
                 <div>
                     <h4><strong>Preguntas</strong></h4>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="web" value="yes"> 
+                            <input type="checkbox" class="form-check-input" name="web" id="1">
                             <b>¿Te gusto la página?</b>
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="webFunction" value="yes">
+                            <input type="checkbox" class="form-check-input" name="webFunction" id="2">
                             <b>¿La página es intuitiva?</b>
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="learn" value="yes">
+                            <input type="checkbox" class="form-check-input" name="learn" id="3">
                             <b>¿Aprendiste algo de World Trigger?</b>
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="worldTrigger" value="yes">
+                            <input type="checkbox" class="form-check-input" name="worldTrigger" id="4">
                             <b>¿Te gusto el universo de World Trigger?</b>
                         </label>
                     </div>
+
                     <br />
+
                     <div class="form-group">
                         <div class="row">
                             <div class="column-2">
                                 <label for="rol"><b>¿Que rol te gustaría ejercer?</b></label>
-                                <select class="form-control" id="rol" name="rol" >
+                                <select class="form-control" id="rol" name="rol">
                                     <option value="">Selecciona una respuesta</option>
-                                    <option value="coc">Atacante</option>
-                                    <option value="pistolero">Artillero</option>
-                                    <option value="franco">Francotirador</option>
-                                    <option value="opera">Operador</option>
-                                    <option value="ingeniero">Ingeniero</option>
+                                    <option value="Combatiente">Atacante</option>
+                                    <option value="Artillero">Artillero</option>
+                                    <option value="Francotirador">Francotirador</option>
+                                    <option value="Operador">Operador</option>
+                                    <option value="Ingeniero">Ingeniero</option>
                                 </select>
                             </div>
                         </div>
                     </div>
                     <span id="voidRol"><b>*Campo requerido</b></span>
+
                     <div class="form-group">
                         <div class="row">
                             <div class="column-2">
                                 <label for="character"><b>¿Que protagonista es tu favorito?</b></label>
-                                <select class="form-control" id="character" name="character" >
+                                <select class="form-control" id="character" name="character">
                                     <option value="">Selecciona una respuesta</option>
-                                    <option value="osamu">Osamu Mikumo</option>
-                                    <option value="yuma">Yūma Kuga</option>
-                                    <option value="replica">Réplica</option>
-                                    <option value="chika">Chika Amatori</option>
-                                    <option value="jin">Yūichi Jin</option>
+                                    <option value="Osamu">Osamu Mikumo</option>
+                                    <option value="Yuma">Yūma Kuga</option>
+                                    <option value="Replica">Réplica</option>
+                                    <option value="Chika">Chika Amatori</option>
+                                    <option value="Jin">Yūichi Jin</option>
                                 </select>
                             </div>
                         </div>
                     </div>
                     <span id="voidMain"><b>*Campo requerido</b></span>
+
                     <div class="form-group">
                         <div class="row">
                             <div class="column-2">
@@ -164,6 +242,7 @@
                     </div>
                     <span id="voidNote"><b>*Campo requerido</b></span>
                     <span id="invalidateNote"><b>*Valor de campo incorrecto</b></span>
+
                     <div class="form-group">
                         <div class="row">
                             <div class="column-2">
@@ -174,9 +253,20 @@
                     </div>
                     <span id="voidAnime"><b>*Campo requerido</b></span>
                     <span id="invalidateAnime"><b>*Valor de campo incorrecto</b></span>
+                    <div>
+                        <div id="imagePrincipal">
+                            <span id="image-upload"></span>
+                        </div>
+                        <br />
+                        <input type="file" name="fichero" id="fichero">
+                        <div>
+                            <span id="uploadImagen"></span>
+                            <span id="image-firebase"></span>
+                        </div>
+                    </div>
                     <br />
-                    <button id="submit" type="submit" class="btn">Enviar</button>
-                    <button type="reset" class="btn">Limpiar</button>
+                    <br />
+                    <input type="submit" name="CrearForm" value="Crear Encuesta" id="submit">
                 </div>
             </form>
         </div>

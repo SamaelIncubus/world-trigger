@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registro</title>
+    <link rel="icon" href="appearance/photo/icon/signUp.png">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="appearance/styles.css">
+    <script src="structure/signUp.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="main.html">World Trigger</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Border</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="border.html">Portada</a>
+                        <a class="dropdown-item" href="Border.html#bking">Jerarquía</a>
+                        <a class="dropdown-item" href="Border.html#bRol">Rol</a>
+                        <a class="dropdown-item" href="Border.html#bTecn">Tecnología</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Neighbors</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#nDemo">Portada</a>
+                        <a class="dropdown-item" href="#nking">Jerarquía</a>
+                        <a class="dropdown-item" href="#nRol">Rol</a>
+                        <a class="dropdown-item" href="#nTecn">Tecnología</a>
+                    </div>
+                </li>
+                <li class="nav-item"> <a class="nav-link" href="gallery.html">Galería</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="login.html">Atrás</a> </li>
+                <li class="nav-item">
+                    <a type="application/rss+xml" href="news.xml">
+                        <img alt="image" src="appearance/photo/icon/rss.png" id="rss" class="img-fluid">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <br />
+        <div class="card">
+            <div class="card-header">
+                <h4><strong>Registrarse</strong></h4>
+            </div>
+            <div class="card-body">
+                <form id="form-signup">
+                    <div class="form-group">
+                        <br />
+                        <label for="email"><strong>Correo Electrónico:</strong></label>
+                        <input type="email" class="form-control" id="email" value="">
+                        <span id="voidEmail"><b>*Campo requerido.</b></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password"><strong>Contraseña:</strong></label>
+                        <input type="password" class="form-control" id="password" value="">
+                        <span id="voidPassword"><b>*Campo requerido.</b></span>
+
+                        <br />
+
+                        <label for="passwordConfirm"><strong>Confirmar Contraseña:</strong></label>
+                        <input type="password" class="form-control" id="passwordConfirm" value="">
+                        <span id="voidPasswordConfirm"><b>*Campo requerido.</b></span>
+
+                        <span id="PasswordUnConfirm"><b>Las contraseñas no coinciden</b></span>
+                    </div>
+                    <button type="submit" class="btn btn-success"><strong>Crear Cuenta</strong></button>
+                    <button type="button" class="btn btn-dark" id="back"><strong>Atrás</strong></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

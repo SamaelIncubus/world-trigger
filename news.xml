@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<rss version="2.0">
+   <channel>
+      <title>World Trigger</title>
+      <link>https://worldtrigger.fandom.com/wiki/Main_Page</link>
+      <description>Información general del mundo "World Trigger".</description>
+      <item>
+         <title>Serie</title>
+         <link>https://worldtrigger.fandom.com/wiki/World_Trigger</link>
+         <description>Información general respecto a la serie.</description>
+      </item>
+       <item>
+         <title>Personajes</title>
+         <link>https://worldtrigger.fandom.com/wiki/Characters</link>
+         <description>Información acerca de los personajes de la serie.</description>
+      </item>
+       <item>
+         <title>Universo</title>
+         <link>https://worldtrigger.fandom.com/wiki/Category:Universe</link>
+         <description>Información acerca del contexto, el lore/universo de la serie.</description>
+      </item>
+       <item>
+         <title>Comunidad</title>
+         <link>https://worldtrigger.fandom.com/wiki/World_Trigger_Wiki:Community_Portal</link>
+         <description>Información acerca de la comunidad de la serie.</description>
+      </item>
+   </channel>
+</rss>
