@@ -1,49 +1,76 @@
 body{
-  background-image: url("photo/background.jpg");
+  background-color: black;
+  color: white;
 }
-.container{
+.right{
+  text-align: right;
+}
+.center{
   text-align: center;
-  color: black;
 }
-.carousel-inner img {
-  width: 100%;
-  height: 100%;
+.left{
+  text-align: left;
+}
+.justify{
+  text-align: justify;
+}
+.bTable{
+  width:10%;
+}
+.unset{
+  text-align: unset;
+}
+#gMain{
+  text-align: center;
 }
 * {
   box-sizing: border-box;
 }
-.column {
-  float: left;
+.column{
+  text-align: center;
   width: 25%;
   padding: 10px;
 }
-.column img {
-  opacity: 0.8; 
-  cursor: pointer; 
+.img-fluid{
+  width:100%;
 }
-.column img:hover {
-  opacity: 1;
+.title{
+  margin:10px 10px 10px 10px;
+  font-size: 25px;
 }
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.modal-title{
+  color:black;
 }
-#imgtext {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
+.click,#mobile,.navbar-nav .dropdown-menu a{
   color: white;
-  font-size: 20px;
 }
-.closebtn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  color: white;
-  font-size: 35px;
-  cursor: pointer;
+#bking{
+  text-align: center;
 }
-.jumbotron{
+#bRol{
+  text-align:left;
+}
+#nking{
+  text-align: center;
+}
+#nRol{
+  text-align:left;
+}
+.container{
+  text-align: center;
+}
+.form-group{
+  margin-left: 10px;
+}
+.navbar-nav .dropdown-menu, #mas{
+  background-color: #383c44;
+}
+.navbar-nav .dropdown-menu a:hover {
   background-color: white;
+  color: black;
+}
+#voidName, #voidFirstSurname, #voidSecondSurname, #voidGender, #voidRol, #voidMain, #voidNote, 
+#invalidateNote, #voidAnime, #invalidateAnime{
+  color: red;
+  display: none;
 }

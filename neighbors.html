@@ -20,103 +20,197 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="appearance/styles.css">
-    <script src="structure/script.js"></script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="jumbotron">
-            <h1><strong>Neighbors</strong></h1>
-        </div>
-        <div class="jumbotron">
-            <img src="appearance/photo/title/neighbors.jpg" alt="Error 404: Image Not Found" class="img-fluid">
-        </div>
-
-        <div class="jumbotron">
-
-            <div class="dropdown" style="text-align: left">
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Páginas
-                    <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                    <li><a href="main.html">World Trigger</a></li>
-                    <li><a href="border.html">Border</a></li>
-                    <li><a href="neighbors.html">Neighbors</a></li>
-                    <li><a href="technology.html">Tecnología</a></li>
-                    <li><a href="form.html">Formulario</a></li>
-                </ul>
-            </div>
-            <br />
-            <h4 style="text-align:left"><strong>Estructura</strong></h4>
-            <table class="table table-dark; table-responsive">
-                <thead>
-                    <tr>
-                        <th class="persona">Desconocida</th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
-
-            <h4 style="text-align:left"><strong>Roles</strong></h4>
-            <br>
-            <ul class="nav nav-tabs">
-                <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#home">Desconocida</a>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="main.html">World Trigger</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Border</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="border.html">Portada</a>
+                        <a class="dropdown-item" href="Border.html#bking">Jerarquía</a>
+                        <a class="dropdown-item" href="Border.html#bRol">Rol</a>
+                        <a class="dropdown-item" href="Border.html#bTecn">Tecnología</a>
+                    </div>
                 </li>
-            </ul>
-            <div class="tab-content">
-                <div id="home" class="container tab-pane active"><br>
-                    <p style="text-align: justify">Se desconoce si existe alguna; ya que los invasores proceden
-                        de distintos multi-versos con multiples objetivos.
-                    </p>
-                </div>
-            </div>
-            <h4 style="text-align:left"><strong>Tropas</strong></h4>
-
-            <div id="demo" class="carousel slide" data-ride="carousel">
-                <ul class="carousel-indicators">
-                    <li data-target="#demo" data-slide-to="0" class="active"></li>
-                    <li data-target="#demo" data-slide-to="1"></li>
-                    <li data-target="#demo" data-slide-to="2"></li>
-                    <li data-target="#demo" data-slide-to="3"></li>
-                </ul>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="appearance/photo/carousel/neighbors/soldado.jpg" alt="Error 404: Image Not Found"
-                            width="900" height="500">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Neighbors</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#nDemo">Portada</a>
+                        <a class="dropdown-item" href="#nking">Jerarquía</a>
+                        <a class="dropdown-item" href="#nRol">Rol</a>
+                        <a class="dropdown-item" href="#nTecn">Tecnología</a>
                     </div>
-                    <div class="carousel-item">
-                        <img src="appearance/photo/carousel/neighbors/soldado2.jpg" alt="Error 404: Image Not Found"
-                            width="900" height="500">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="appearance/photo/carousel/neighbors/soldado3.jpg" alt="Error 404: Image Not Found"
-                            width="900" height="500">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="appearance/photo/carousel/neighbors/neighborsHumano.jpg" alt="Error 404: Image Not Found"
-                            width="900" height="500">
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#demo" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
-            </div>
-            <br />
-            <ul class=" pagination-sm">
-                <li class="page-item"><a class="page-link" href="border.html">Anterior</a></li>
-                <li class="page-item"><a class="page-link" href="main.html">World Trigger</a></li>
-                <li class="page-item"><a class="page-link" href="border.html">Border</a></li>
-                <li class="page-item active"><a class="page-link" href="neighbors.html">Neighbors</a></li>
-                <li class="page-item"><a class="page-link" href="technology.html">Tecnología</a></li>
-                <li class="page-item"><a class="page-link" href="form.html">Formulario</a></li>
-                <li class="page-item"><a class="page-link" href="technology.html">Siguiente</a></li>
+                </li>
+                <li class="nav-item"> <a class="nav-link" href="gallery.html">Galería</a> </li>
+                <li class="nav-item"> <a class="nav-link" href=" form.html">Formulario</a> </li>
             </ul>
         </div>
+    </nav>
+
+
+    <div id="nDemo" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active"> <img src="appearance/photo/neighbors/carousel/soldado.jpg" alt="Error 404: Image Not Found" class="img-fluid">  </div>
+            <div class="carousel-item">        <img src="appearance/photo/neighbors/carousel/soldado2.jpg" alt="Error 404: Image Not Found" class="img-fluid"> </div>
+            <div class="carousel-item">        <img src="appearance/photo/neighbors/carousel/soldado3.jpg" alt="Error 404: Image Not Found" class="img-fluid"> </div>
+        </div>
+        <a class="carousel-control-prev" href="#nDemo" data-slide="prev"> <span class="carousel-control-prev-icon"></span> </a>
+        <a class="carousel-control-next" href="#nDemo" data-slide="next"> <span class="carousel-control-next-icon"></span> </a>
     </div>
+
+
+    <div class="container">
+        <br />
+        <h1 id="nking"><strong>Jerarquía</strong></h1>
+        <p> <b>Desconocida: Ha causa de que estos proceden de multiples universos es imposible percibir un patron.</b> </p>
+        <h4 id="nRol"><strong>Roles</strong></h4>
+        <br>
+
+        <ul class="nav nav-tabs">
+            <li class="nav-item"> <a class="nav-link active bg-dark" data-toggle="tab" href="#home"> <b class="click">Desconocida</b> </a> </li>
+        </ul>
+        <div class="tab-content">
+            <div id="home" class="container tab-pane active">
+                <br> 
+                <p class="justify"> <b>Se desconoce si existe alguna; ya que los invasores
+                        proceden de distintos multi-versos con multiples objetivos.</b>
+                </p>
+            </div>
+        </div>
+        <br />
+    </div>
+
+
+    <h2  id="nTecn" class="center"><strong>Tecnología</strong></h2>
+    <br />
+    <div class="container">
+        <table class="table-dark table-responsive table-bordered">
+            <thead>
+                <tr>
+                    <th> <strong class="title">Nombre      </strong> </th>
+                    <th> <strong class="title">Aspecto     </strong> </th>
+                    <th> <strong class="title">Descripción </strong> </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th colspan="2"> <strong class="title">Categoría:     </strong> </th>
+                    <th>             <strong class="title">Equipo Estándar</strong> </th>
+                </tr>
+                <tr>
+                    <th> <strong>Trion Body</strong> </th>
+                    <th> <img src="appearance/photo/border/technology/bodyTrion.gif" alt="Error 404: Image Not Found" class="img-fluid"> </th>
+                    <th class="left">Los cuerpos de Trion son el implemento más básico otorgado por
+                        Triggers. Son virtualmente invulnerables a daños que no son causados ​​por Trion (y por lo
+                        tanto por Triggers) también le otorgan al usuario varias mejoras físicas, así como un sistema
+                        de comunicación interno
+                    </th>
+                </tr>
+                <tr>
+                    <th> <strong>Cape</strong> </th>
+                    <th> <img src="appearance/photo/neighbors/technology/cape.gif"  alt="Error 404: Image Not Found" class="img-fluid"> </th>
+                    <th class="left">Trigger es una capa que actúa como armadura, lo que les permite evitar
+                        ciertos ataques. Puede resistir balas, pero no las hojas de atacante. También puede bloquear
+                        los efectos específicos y eliminar las partes afectadas. Si está dañado, la capa se regenerará
+                        en segundos</th>
+                </tr>
+                <tr>
+                    <th> <strong>Receptor Trion</strong> </th>
+                    <th> <img src="appearance/photo/neighbors/technology/horns.jpg" alt="Error 404: Image Not Found" class="img-fluid"> </th>
+                    <th class="left">Un secreto militar celosamente guardado, los Receptores de Trion son
+                        cuernos que se implantan permanentemente en las cabezas de los niños para mejorar
+                        dramáticamente su capacidad y calidad de Trion a medida que crecen. Los cuernos de Black
+                        Trigger se vuelven negros
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="2"> <strong class="title">Categoría:    </strong> </th>
+                    <th>             <strong class="title">Armas Atacante</strong> </th>
+                </tr>
+                <tr>
+                    <th> <strong>Organon</strong> </th>
+                    <th> <img src="appearance/photo/neighbors/technology/oreagon.jpg" alt="Error 404: Image Not Found" class="img-fluid"> </th>
+                    <th class="left">Un Trigger le permite convocar hasta cinco anillos con seis cuchillas
+                        cada una girando alrededor del usuario tan rápido que normalmente son invisibles. Al
+                        extenderlos, puede cortar una ciudad en un instante. Además, tiene una espada para si los
+                        anillos no son suficiente para mantener a raya a los enemigos
+                    </th>
+                </tr>
+                <tr>
+                    <th> <strong>Vorvoros</strong> </th>
+                    <th> <img src="appearance/photo/neighbors/technology/vorvoros.gif" alt="Error 404: Image Not Found" class="img-fluid"> </th>
+                    <th class="left">Un Trigger le permite para licuarse, gasificarse y solidificarse.
+                        Gracias a su habilidad de licuarse posee una gran movilidad e inmunidad a los ataques dirigidos
+                        a su cuerpo. También puede usar su habilidad de solidificarse para crear cuchillas y la
+                        gasificarse para entrar en los pulmones del objetivo y posteriormente crear cuchillas e
+                        infligir daño interno. Alterar el estado de su cuerpo de trion deja su órgano de Trion y su
+                        sistema de suministro expuesto, pero puede contrarrestar esta debilidad protegiéndolo con su
+                        solidificación y también pudiendo crear señuelos
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="2"> <strong class="title">Categoría:     </strong> </th>
+                    <th>             <strong class="title">Armas Tiradores</strong> </th>
+                </tr>
+                <tr>
+                    <th> <strong>Lampyris</strong> </th>
+                    <th> <img src="appearance/photo/neighbors/technology/lampyris.jpg" alt="Error 404: Image Not Found" class="img-fluid"> </th>
+                    <th class="left">Un Trigger que permite al usuario manipular innumerables "fragmentos"
+                        magnéticos a través de un guante. Al reaccionar entre sí, los fragmentos pueden crear una
+                        amplia gama de construcciones, como escudos, proyectiles afilados, cañones,espigas y shuriken
+                        gigante,... El magnetismo también puede ser explotado para restringir o atraer un objetivo
+                        después de disparar fragmentos en su cuerpo. Además, este disparador tiene vastas capacidades
+                        complementarias, que incluyen levitación, generación de pistas magnéticas para desplazamiento a
+                        alta velocidades, camuflaje en ambientes oscuros,...
+                    </th>
+                </tr>
+                <tr>
+                    <th> <strong>Speiraskia</strong> </th>
+                    <th> <img src="appearance/photo/neighbors/technology/speiraskia.jpg" alt="Error 404: Image Not Found" class="img-fluid"> </th>
+                    <th class="left">Un Trigger que permite al usuario crear ventanas en el tejido del
+                        espacio. Las ventanas grandes pueden funcionar como puertas para teletransportar cosas,
+                        mientras que las pequeñas pueden expulsar pinchos para atravesar a los objetivos. Cuanto más
+                        grande sea la ventana, y mayor sea la distancia más Trion se consume .
+                    </th>
+                </tr>
+                <tr>
+                    <th> <strong>Alektor</strong> </th>
+                    <th> <img src="appearance/photo/neighbors/technology/alektor.jpg" alt="Error 404: Image Not Found" class="img-fluid"> </th>
+                    <th class="left">Un Trigger que permite al usuario generar balas con forma de animales
+                        desde un núcleo ovoide sobre su mano. Al entrar en contacto con una construcción de Trion, la
+                        desestabilizan y, si el daño es suficiente, la convierten en un cubo de trion indestructible.
+                        De este modo, se puede neutralizar a los oponentes sin que puedan defenderse o contraatacar.
+                        También le permite al usuario absorber los cubo de Trion creados para regenerar su propio Trion
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="2"> <strong class="title">Categoría:           </strong> </th>
+                    <th>             <strong class="title">Armas Francotiradores</strong> </th>
+                </tr>
+                <tr>
+                    <th> <strong>Chelidon</strong> </th>
+                    <th> <img src="appearance/photo/neighbors/technology/chelidon.jpg" alt="Error 404: Image Not Found" class="img-fluid"> </th>
+                    <th class="left">Un Trigger dotado con una potencia de fuego masiva que tiene múltiples
+                        configuraciones. Permite al usuario disparar rayos poderosos ya sea por orbes explosivos
+                        alrededor de su misma o en sus manos. Puede de cambiar de forma ha un cañón de brazo con una
+                        alta velocidad de disparo. Chelidon también es capaz de disparar rayos destructivos desde la
+                        espalda del usuario, así como de bombardear un área con un aluvión de balas.Como también de una
+                        habilitar el vuelo por un tiempo limitado.
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <br />
+    <br />
 </body>
 
 </html>

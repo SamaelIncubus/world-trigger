@@ -20,136 +20,295 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="appearance/styles.css">
-    <script src="structure/script.js"></script>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="main.html">World Trigger</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Border</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#bDemo">Portada</a>
+                        <a class="dropdown-item" href="#bking">Jerarquía</a>
+                        <a class="dropdown-item" href="#bRol">Rol</a>
+                        <a class="dropdown-item" href="#bTecn">Tecnología</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Neighbors</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="neighbors.html">Portada</a>
+                        <a class="dropdown-item" href="neighbors.html#nking">Jerarquía</a>
+                        <a class="dropdown-item" href="neighbors.html#nRol">Rol</a>
+                        <a class="dropdown-item" href="neighbors.html#nTecn">Tecnología</a>
+                    </div>
+                </li>
+                <li class="nav-item"> <a class="nav-link" href="gallery.html">Galería</a> </li>
+                <li class="nav-item"> <a class="nav-link" href=" form.html">Formulario</a> </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="bDemo" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active"> <img src="appearance/photo/border/carousel/operador.jpg" alt="Error 404: Image Not Found" class="img-fluid"> </div>
+            <div class="carousel-item">        <img src="appearance/photo/border/carousel/rangoA2.jpg"  alt="Error 404: Image Not Found" class="img-fluid"> </div>
+            <div class="carousel-item">        <img src="appearance/photo/border/carousel/rangoA3.jpg"  alt="Error 404: Image Not Found" class="img-fluid"> </div>
+        </div>
+        <a class="carousel-control-prev" href="#bDemo" data-slide="prev"> <span class="carousel-control-prev-icon"> </span> </a>
+        <a class="carousel-control-next" href="#bDemo" data-slide="next"> <span class="carousel-control-next-icon"> </span> </a>
+    </div>
+    <br />
+
+
+    <h2 id="bking"><strong>Jerarquía</strong></h2>
+    <br />
     <div class="container">
-        <div class="jumbotron">
-            <h1><strong>Border</strong></h1>
-        </div>
-        <div class="jumbotron">
-            <img src="appearance/photo/title/border.jpg" alt="Error 404: Image Not Found" class="img-fluid">
-        </div>
-        <div class="jumbotron">
-
-            <div class="dropdown" style="text-align: left">
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Páginas
-                    <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                    <li><a href="main.html">World Trigger</a></li>
-                    <li><a href="border.html">Border</a></li>
-                    <li><a href="neighbors.html">Neighbors</a></li>
-                    <li><a href="technology.html">Tecnología</a></li>
-                    <li><a href="form.html">Formulario</a></li>
-                </ul>
-            </div>
-
-            <br />
-            <h4 style="text-align:left"><strong>Estructura</strong></h4>
-
-            <table class="table table-light table-responsive">
-                <thead class="table-primary">
-                    <tr>
-                        <th class="persona"></th>
-                        <th class="persona"></th>
-                        <th class="persona">Comandante Director General</th>
-                        <th class="persona"></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th class="persona"></th>
-                        <th class="persona">Directores de División</th>
-                        <th class="persona">Directores de Cuartel</th>
-                        <th class="persona">Directores de Departamento</th>
-                    </tr>
-                    <tr>
-                        <th class="persona">Agentes del Comandante</th>
-                        <th class="persona">Agentes de División</th>
-                        <th class="persona">Agentes de Cuartel</th>
-                        <th class="persona">Personal de Departamento</th>
-                    </tr>
-                </tbody>
-            </table>
+        <table class="table-black table-responsive">
+            <tbody>
+                <tr>
+                    <th> <img src="appearance/photo/border/table/arrowLeft.jpg" alt="Error 404: Image Not Found" class="bTable"> </th>
+                    <th> <img src="appearance/photo/border/table/arrowLeft.jpg" alt="Error 404: Image Not Found" class="bTable"> </th>
+                    <th>
+                        Comandante Director General
+                        <br />
+                        <img src="appearance/photo/border/table/arrow.jpg" alt="Error 404: Image Not Found" class="bTable">
+                    </th>
+                    <th> <img src="appearance/photo/border/table/arrowRight.jpg" alt="Error 404: Image Not Found" class="bTable"> </th>
+                </tr>
+                <tr>
+                    <th> <img src="appearance/photo/border/table/arrow.jpg"      alt="Error 404: Image Not Found" class="bTable"> </th>
+                    <th>
+                        Directores de División
+                        <br />
+                        <img src="appearance/photo/border/table/arrow.jpg" alt="Error 404: Image Not Found" class="bTable">       
+                    </th>
+                    <th>
+                        Directores de Cuartel
+                        <br />
+                        <img src="appearance/photo/border/table/arrow.jpg" alt="Error 404: Image Not Found" class="bTable">        
+                    </th>
+                    <th>
+                        Directores de Departamento
+                        <br />
+                        <img src="appearance/photo/border/table/arrow.jpg" alt="Error 404: Image Not Found" class="bTable">
+                    </th>
+                </tr>
+                <tr>
+                    <th>Agentes del Comandante</th>
+                    <th>Agentes de División</th>
+                    <th>Agentes de Cuartel</th>
+                    <th>Personal de Departamento</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br />
 
 
-            <h4 style="text-align:left"><strong>Roles</strong></h4>
-            <br>
+    <div class="container">
+        <h4 id="bRol"><strong>Roles</strong></h4>
+        <br>
+        <div class="d-none d-md-block">
             <ul class="nav nav-tabs">
-                <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#home">Atacante</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#menu1">Artillero</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#menu2">Francotirador</a>
+                <li class="nav-item"> <a class="nav-link active bg-dark" data-toggle="tab" href="#home"> <b class="click">Atacante</b> </a> </li>
+                <li class="nav-item"> <a class="nav-link        bg-dark" data-toggle="tab" href="#menu1"> <b class="click">Artillero</b> </a> </li>
+                <li class="nav-item"> <a class="nav-link        bg-dark" data-toggle="tab" href="#menu2"> <b class="click">Francotirador</b> </a> </li>
+                <li class="nav-item"> <a class="nav-link        bg-dark" data-toggle="tab" href="#menu3"> <b class="click">Operador</b> </a> </li>
+                <li class="nav-item"> <a class="nav-link        bg-dark" data-toggle="tab" href="#menu4"> <b class="click">Ingeniero</b> </a> </li>
+            </ul>
+        </div>
+        <div class="d-md-none">
+            <ul class="nav nav-tabs">
+                <li class="nav-item"> <a class="nav-link active bg-dark" data-toggle="tab" href="#home"> <b class="click">Atacante</b> </a> </li>
+                <li class="nav-item"><a class="nav-link bg-dark" data-toggle="tab" href="#menu1"> <b class="click">Artillero</b> </a> </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle bg-dark" id="mobile" data-toggle="dropdown" href="#"><b></b></a>
+                    <div class="dropdown-menu" id="mas">
+                        <a class="nav-link bg-dark" data-toggle="tab" href="#menu2"> <b class="click">Francotirador</b> </a>
+                        <a class="nav-link bg-dark" data-toggle="tab" href="#menu3"> <b class="click">Operador</b> </a>
+                        <a class="nav-link bg-dark" data-toggle="tab" href="#menu4"> <b class="click">Ingeniero</b> </a>
+                    </div>
                 </li>
             </ul>
-            <div class="tab-content">
-                <div id="home" class="container tab-pane active"><br>
-                    <p style="text-align: justify">Son agente que se especializan el armas cuerpo a cuerpo.
-                        Como
-                        katanas, escudos, espadas,...</p>
-                </div>
-                <div id="menu1" class="container tab-pane fade"><br>
-                    <p style="text-align: justify">Son agente que se especializan el armas media distancia.
-                        Como
-                        sub-fusiles, escopetas,...</p>
-                </div>
-                <div id="menu2" class="container tab-pane fade"><br>
-                    <p style="text-align: justify">Son agente que se especializan el armas media distancia.
-                        Como
-                        francotiradores.</p>
-                </div>
+        </div>
+        <div class="tab-content">
+            <div id="home" class="container tab-pane active">
+                <br>
+                <p class="justify"><b>Son agentes que se especializan el armas cuerpo a cuerpo. Como katanas, escudos, espadas,...</b> </p>
             </div>
-            <h4 style="text-align:left"><strong>Tropas</strong></h4>
-
-            <div id="demo" class="carousel slide" data-ride="carousel">
-                <ul class="carousel-indicators">
-                    <li data-target="#demo" data-slide-to="0" class="active"></li>
-                    <li data-target="#demo" data-slide-to="1"></li>
-                    <li data-target="#demo" data-slide-to="2"></li>
-                    <li data-target="#demo" data-slide-to="3"></li>
-                </ul>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="appearance/photo/carousel/border/rangoA.jpg" alt="Error 404: Image Not Found" width="900"
-                            height="500">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="appearance/photo/carousel/border/rangoA2.jpg" alt="Error 404: Image Not Found" width="900"
-                            height="500">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="appearance/photo/carousel/border/rangoA3.jpg" alt="Error 404: Image Not Found" width="900"
-                            height="500">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="appearance/photo/carousel/border/rangoA4.jpg" alt="Error 404: Image Not Found" width="900"
-                            height="500">
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#demo" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
+            <div id="menu1" class="container tab-pane fade">
+                <br>
+                <p class="justify"><b>Son agentes que se especializan el armas media distancia. Como sub-fusiles, escopetas,...</b> </p>
             </div>
-            <br />
-            <ul class="pagination-sm">
-                <li class="page-item"><a class="page-link" href="main.html">Anterior</a></li>
-                <li class="page-item"><a class="page-link" href="main.html">World Trigger</a></li>
-                <li class="page-item active"><a class="page-link" href="border.html">Border</a></li>
-                <li class="page-item"><a class="page-link" href="neighbors.html">Neighbors</a></li>
-                <li class="page-item"><a class="page-link" href="technology.html">Tecnología</a></li>
-                <li class="page-item"><a class="page-link" href="form.html">Formulario</a></li>
-                <li class="page-item"><a class="page-link" href="neighbors.html">Siguiente</a></li>
-            </ul>
+            <div id="menu2" class="container tab-pane fade">
+                <br>
+                <p class="justify"><b>Son agentes que se especializan el armas media distancia. Como francotiradores.</b> </p>
+            </div>
+            <div id="menu3" class="container tab-pane fade">
+                <br>
+                <p class="justify"><b>Son agentes en cargados del manejo de la información en el campo de batalla. Como obtener planos
+                     de edificios , dar información de enemigos,...</b> 
+                </p>
+            </div>
+            <div id="menu4" class="container tab-pane fade">
+                <br>
+                <p class="justify"><b>Son agentes en cargados de el mantenimiento de la base como el desarrollo de tecnología..</b> </p>
+            </div>
         </div>
     </div>
+    <br />
+
+
+    <h2 class="center" id="bTecn"><strong>Tecnología</strong></h2>
+    <br />
+    <div class="container">
+        <table class="table-dark table-responsive table-bordered">
+            <thead>
+                <tr>
+                    <th> <strong class="title">Nombre      </strong> </th>
+                    <th> <strong class="title">Aspecto     </strong> </th>
+                    <th> <strong class="title">Descripción </strong> </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th colspan="2"> <strong class="title">Categoría:      </strong> </th>
+                    <th>             <strong class="title">Equipo Estándar </strong> </th>
+                </tr>
+                <tr>
+                    <th> <strong>Bail Out</strong> </th>
+                    <th> <img src="appearance/photo/border/technology/bailOut.gif"   alt="Error 404: Image Not Found" class="img-fluid"> </th>
+                    <th class="left">Trigger obligatorio para los agentes de rango C o superior; este seencarga de teletransportar al usuario
+                        a la base cuando este queda fuera de combate
+                    </th>
+                </tr>
+                <tr>
+                    <th> <strong>Radar</strong> </th>
+                    <th> <img src="appearance/photo/border/technology/radar.jpg"     alt="Error 404: Image Not Found" class="img-fluid"> </th>
+                    <th class="left">Trigger detecta la posición de los enemigos dentro de un área</th>
+                </tr>
+                <tr>
+                    <th> <strong>Trion Body</strong> </th>
+                    <th> <img src="appearance/photo/border/technology/bodyTrion.gif" alt="Error 404: Image Not Found" class="img-fluid"> </th>
+                    <th class="left">Los cuerpos de Trion son el implemento más básico otorgado por
+                        Triggers. Son virtualmente invulnerables a daños que no son causados ​​por Trion (y por lo
+                        tanto por Triggers) también le otorgan al usuario varias mejoras físicas, así como un sistema
+                        de comunicación interno
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="2"> <strong class="title">Categoría:     </strong> </th>
+                    <th>             <strong class="title">Armas Atacante </strong> </th>
+                </tr>
+                <tr>
+                    <th> <strong>Kogetsu</strong> </th>
+                    <th> <img src="appearance/photo/border/technology/kogetsu.jpg"  alt="Error 404: Image Not Found" class="img-fluid"> </th>
+                    <th class="left">El primer Trigger de Ataques que se creó y el más popular. Es un arma
+                        moderadamente pesada con un poder de ataque y durabilidad muy altos. Se considera el más
+                        equilibrado
+                    </th>
+                </tr>
+                <tr>
+                    <th> <strong>Raygust</strong> </th>
+                    <th> <img src="appearance/photo/border/technology/raygust.jpg"  alt="Error 404: Image Not Found" class="img-fluid"> </th>
+                    <th class="left">Un Trigger de ataque orientado a la defensa pues puede transformarse
+                        en un escudo, fue el último de los tres principales que se inventaron. Tiene un bajo poder
+                        ofensivo y es muy pesado; lo hacen impopular entre los atacantes. No obstante, es muy
+                        resistente y su durabilidad aumenta aún más en el modo de escudo
+                    </th>
+                </tr>
+                <tr>
+                    <th> <strong>Scorpion</strong> </th>
+                    <th> <img src="appearance/photo/border/technology/scorpion.jpg" alt="Error 404: Image Not Found" class="img-fluid"> </th>
+                    <th class="left">Un Trigger que es hoja que se puede extraer de cualquier parte del
+                        cuerpo y cuya forma se puede modificar libremente; Al ajustar el Trion. Fue el segundo que se
+                        creó. Es poderoso en ataque y casi sin peso, pero su durabilidad es baja
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="2"> <strong class="title">Categoría:      </strong> </th>
+                    <th>             <strong class="title">Armas Tiradores </strong> </th>
+                </tr>
+                <tr>
+                    <th> <strong>Asteroid</strong> </th>
+                    <th> <img src="appearance/photo/border/technology/asteroid.gif" alt="Error 404: Image Not Found" class="img-fluid"> </th>
+                    <th class="left">Un Trigger que son balas que no tienen propiedades especiales. Es
+                        particularmente efectivo
+                        para fuego concentrado.
+                    </th>
+                </tr>
+                <tr>
+                    <th> <strong>Hound</strong> </th>
+                    <th> <img src="appearance/photo/border/technology/hound.gif"    alt="Error 404: Image Not Found" class="img-fluid"> </th>
+                    <th class="left">Un Trigger que son balas que persiguen al objetivo automáticamente,
+                        incluso si son invisibles. Es posible seleccionar entre un modo de buscador de Trions, que hace
+                        que las balas se acerquen a los enemigos, y un modo de orientación guiada, que está dirigido
+                        por la vista y más preciso.
+                    </th>
+                </tr>
+                <tr>
+                    <th> <strong>Meteora</strong> </th>
+                    <th> <img src="appearance/photo/border/technology/meteora.gif" alt="Error 404: Image Not Found" class="img-fluid"> </th>
+                    <th class="left">Un Trigger que son balas que explotan al impactar, se usa para causar
+                        un daño generalizado. Los tiradores pueden establecer su velocidad a cero para emplearla en
+                        trampas. El tamaño de las explosiones aumenta con la cantidad de trion gastado.
+                    </th>
+                </tr>
+                <tr>
+                    <th> <strong>Viper</strong> </th>
+                    <th> <img src="appearance/photo/border/technology/viper.gif"  alt="Error 404: Image Not Found" class="img-fluid"> </th>
+                    <th class="left">Un Trigger que son balas cuya trayectoria se puede establecer antes de
+                        disparar. Aunque la mayoría de los agentes se adhieren a una pequeña cantidad de patrones con
+                        los que han practicado, los usuarios especialmente experimentados pueden crear nuevas
+                        trayectorias antes de cada disparo, lo que mejora considerablemente la eficacia de este
+                        Trigger.
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="2"> <strong class="title">Categoría:            </strong> </th>
+                    <th>             <strong class="title">Armas Francotiradores </strong> </th>
+                </tr>
+                <tr>
+                    <th> <strong>Eaglet</strong> </th>
+                    <th> <img src="appearance/photo/border/technology/eaglet.jpg" alt="Error 404: Image Not Found" class="img-fluid"> </th>
+                    <th class="left">Un Trigger que es un rifle centrado en el alcance. Cuanto más alto sea
+                        el Trión del usuario, más se extiende el rango. Aparte del alcance, este Trigger es notable por
+                        su alta velocidad de balas y su potencia de fuego. Ya que no tiene defectos y es el más
+                        equilibrado, Eaglet es el más popular de los francotiradores.
+                    </th>
+                </tr>
+                <tr>
+                    <th> <strong>Ibis</strong> </th>
+                    <th> <img src="appearance/photo/border/technology/ibis.jpg"   alt="Error 404: Image Not Found" class="img-fluid"> </th>
+                    <th class="left">Un Trigger que es un rifle con la mayor potencia de fuego, pero con
+                        baja velocidad de balas. Esto hace que sea difícil golpear. Siendo el más pesado y el más
+                        voluminoso de los tres, siendo difícil apuntar; por tanto los usuarios lo apoyan en un trípode.
+                        Por todas estas razones, rara vez se emplea en batallas. Cuanto más alto sea el Trion del
+                        usuario, más potente será la bala.
+                    </th>
+                </tr>
+                <tr>
+                    <th> <strong>Lightning</strong> </th>
+                    <th><img src="appearance/photo/border/technology/lightning.jpg" alt="Error 404: Image Not Found" class="img-fluid"> </th>
+                    <th class="left">Un Trigger que es un rifle con baja potencia, pero tiene la mayor
+                        velocidad de balas de los tres. Tiene un alto grado de precisión, además es bastante ligero lo
+                        que lo hace muy fácil de manejar; de hecho se puede disparar mientras se está en movimiento.
+                        También es capaz de disparar rápidamente; cuanto mayor sea el Trion del usuario, mayor será la
+                        velocidad de la bala.
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <br />
+    <br />
 </body>
 
 </html>
